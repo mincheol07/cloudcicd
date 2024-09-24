@@ -11,7 +11,7 @@ import socket
 
 
 client = MongoClient('mongodb://AdminDB:VMware1!@fp-docdb-cluster.cluster-cn0y60kek5cj.ap-northeast-2.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false')
-db = client['documentsdb']  # 사용할 데이터베이스 선택
+db = client['test']  # 사용할 데이터베이스 선택
 users_collection = db['users']  # 사용할 컬렉션 선택
 production = db['production']
 cart_collection = db['cart']
