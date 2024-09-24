@@ -72,7 +72,7 @@ pipeline {
                     git config user.email "chojo480912@gmail.com"
                     git config user.name "mincheol07"
                     git commit -m "Update image tag to ${IMAGE_TAG}"
-                    git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/mincheol07/tema3k8s.git HEAD:main
+                    git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/mincheol07/team3k8s.git HEAD:main
                     '''
                 }
             }
