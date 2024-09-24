@@ -66,6 +66,7 @@ pipeline {
                     sh '''
                     #!bin/bash
                     cd /home/ec2-user/team3k8s/cloud/
+                    git pull origin main --rebase
                     sudo sed -i "s|image: .*/nginx:.*$|image: ${ECR_REGISTRY}/${ECR_REPOSITORY_NGINX}:${NGINX_IMAGE_TAG}|" deployment.yaml  
                     sudo sed -i "s|image: .*/flask:.*$|image: ${ECR_REGISTRY}/${ECR_REPOSITORY_FLASK}:${FLASK_IMAGE_TAG}|" deployment.yaml  
                     git add .
