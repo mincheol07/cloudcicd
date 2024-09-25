@@ -23,24 +23,24 @@ fs = gridfs.GridFS(db) # gridfs를 이용하여 image 저장할 콜렉션 지정
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "ABCD"
 
-'''
 # 레디스 사용
 app.config["SESSION_TYPE"] = "redis"
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_USE_SIGNER"] = True
 app.config["SESSION_REDIS"] = Redis(
-    host='192.168.133.191',  # Private Subnet에 있는 Redis 엔드포인트
+    host='clustercfg.lss.epfrnm.apn2.cache.amazonaws.com:6379',  # Private Subnet에 있는 Redis 엔드포인트
     port=6379,  # Redis 기본 포트
     decode_responses=False
 )
-'''
 
+
+'''
 # 파일시스템 사용
 app.config["SESSION_TYPE"] = "filesystem"
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_USE_SIGNER"] = True
 Session(app)
-
+'''
 
 @app.after_request
 def after_request(response):
