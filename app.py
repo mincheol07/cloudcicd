@@ -28,7 +28,7 @@ app.config["SESSION_TYPE"] = "redis"
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_USE_SIGNER"] = True
 app.config["SESSION_REDIS"] = Redis(
-    host='clustercfg.lss.epfrnm.apn2.cache.amazonaws.com:6379',  # Private Subnet에 있는 Redis 엔드포인트
+    host='clustercfg.cash.epfrnm.memorydb.ap-northeast-2.amazonaws.com:6379',  # Private Subnet에 있는 Redis 엔드포인트
     port=6379,  # Redis 기본 포트
     decode_responses=False
 )
