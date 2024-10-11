@@ -10,7 +10,7 @@
 
 
 ### 기술 스택 (AWS)
-**Terraform**, **EKS**, **CloudFront**, **DMS**, **DocumentDB**, **Site-To-Site VPN**, **WAF**, **Router53**, **ELB**, **ECS**
+**Terraform**, **EKS**, **CloudFront**, **DMS**, **DocumentDB**, **Site-To-Site VPN**, **WAF**, **Route 53**, **ELB**, **ECS**
 
 ### 아키텍처
 ![_파이널프로젝트.jpg](https://github.com/mincheol07/cloudcicd/blob/main/Arch.jpg)
