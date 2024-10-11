@@ -13,7 +13,7 @@
 **Terraform**, **EKS**, **CloudFront**, **DMS**, **DocumentDB**, **Site-To-Site VPN**, **WAF**, **Router53**, **ELB**, **ECS**
 
 ### 아키텍처
-![_파이널프로젝트.jpg]https://github.com/mincheol07/cloudcicd/blob/main/_파이널%20프로젝트.jpg
+![_파이널프로젝트.jpg](https://github.com/mincheol07/cloudcicd/blob/main/_파이널%20프로젝트.jpg)
 
 
 
